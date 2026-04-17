@@ -1,6 +1,8 @@
 # UrbanScapes Hardware
 
-This repository contains the hardware code for the UrbanScapes, designed to run on a Raspberry Pi or any Linix based general-purpose computer such as Nvidia Jetson Nano. 
+This directory contains the hardware code for the UrbanScapes, designed to run on a Raspberry Pi or any Linix based general-purpose computer such as Nvidia Jetson Nano.
+
+This hardware was used to collect the data for the Spectrascapes dataset and will be updated with new features and improvements in the future. The system architecture has been designed to be modular and easily expandable with imaging sensors with more spectral bands.
 
 The system synchronizes data collection from multiple sensors including an RGB camera, MAPIR survey RGN camera, FLIR Lepton thermal camera (via OpenMV), and a GPS module.
 
