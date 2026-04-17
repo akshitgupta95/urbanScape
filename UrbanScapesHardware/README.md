@@ -1,11 +1,11 @@
 # UrbanScapes Hardware
 
-This repository contains the hardware code for the UrbanScapes , designed to run on a Raspberry Pi or any Linix based general purpose computer such as Nvidia Jetson Nano. 
+This repository contains the hardware code for the UrbanScapes, designed to run on a Raspberry Pi or any Linix based general-purpose computer such as Nvidia Jetson Nano. 
 
 The system synchronizes data collection from multiple sensors including an RGB camera, MAPIR survey RGN camera, FLIR Lepton thermal camera (via OpenMV), and a GPS module.
 
 ## Setup & Startup
-To run the data collection system (`main.py`) automatically on your Raspberry Pi on startup, you can use one of the following methods:
+To run the data capture automatically on your Raspberry Pi on startup (`main.py`), you can use one of the following methods:
 
 ### 1. Using systemd (Recommended)
 This is the most robust way to start processes on boot and keeps logs.
@@ -73,14 +73,16 @@ Connect your modules to the Raspberry Pi according to the following mapping:
 | RPi Pin | Matching Pin | Connection Purpose |
 | :--- | :--- | :--- |
 | **3V3 Power** | GPS: VIN | Power for GPS |
-| **GPIO 2 (SDA)** | On Button 1 | Data Collection Trigger |
+| **Ground** | GPS: GND | GPS Ground |
 | **GPIO 4 (GPCLK0)** | GPS: RX | Serial to GPS |
 | **GPIO 5** | GPS: TX | Serial from GPS |
-| **Ground** | On button 2 | Ground terminal for Button |
-| **Ground** | GPS: GND | GPS Ground |
 | **5V power** | OpenMV: VIN | Power for OpenMV |
-| **6: Ground** | OpenMV: GND | OpenMV Ground |
+| **Pin 6: Ground** | OpenMV: GND | OpenMV Ground |
 | **GPIO 14 (TXD)** | OpenMV: P5 | UART RX on OpenMV |
 | **GPIO 15 (RXD)** | OpenMV: P4 | UART TX on OpenMV |
-| **GPIO 18** | Mapir: white | PWM Trigger for MAPIR |
-| **Ground** | Mapir: black | MAPIR Ground |
+| **GPIO 18** | Survey3 HDMI PWM Trigger: white | PWM Trigger for MAPIR |
+| **Ground** | Survey3 HDMI PWM Trigger: black | PWM Trigger for MAPIR: Ground |
+| **GPIO 2 (SDA)** | On Data Capture Button | Data Collection Trigger for Button |
+| **MIPI Camera Serial Interface** | Pi camera module ribbon | RGB camera |
+| **Ground** | On Data Capture Button | Ground terminal for Button |
+
