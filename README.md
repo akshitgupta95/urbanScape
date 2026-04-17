@@ -1,4 +1,4 @@
-# urbanScape
+# Spectrascapes and the UrbanScape
 
 Code repository for **The Spectrascapes Dataset: Street-view imagery beyond the visible captured using a mobile platform**.
 
