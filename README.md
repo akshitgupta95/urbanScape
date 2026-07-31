@@ -2,7 +2,8 @@
 
 Code repository for **The Spectrascapes Dataset: Street-view imagery beyond the visible captured using a mobile platform**.
 
-Spectrascapes is an open-access dataset of **17,718 street-level multi-spectral images** (RGB, Near-Infrared, and Thermal) captured across diverse urban morphologies in the Netherlands — from villages to large urban areas. The data was collected on bikes using a custom multi-sensor mobile platform.
+Spectrascapes is an open-access dataset of **17,718 street-level multi-spectral images** (RGB, Near-Infrared, and Thermal) captured across diverse urban morphologies in the Netherlands — from villages to large urban areas. The data was collected on bikes using a custom multi-sensor mobile platform as shown below called Urbanscapes.
+![1.png](/UrbanScapesHardware/sampleDeployment.png)
 
 ---
 
